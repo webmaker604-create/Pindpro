@@ -23,9 +23,9 @@ const services = [
 
 export function Services() {
   return (
-    <section id="teenused" className="py-12 md:py-16">
+    <section id="teenused" className="bg-slate-50 py-12 md:py-16">
       <div className="mx-auto max-w-[1100px] px-5">
-        <h2 className="mb-6 text-2xl font-bold text-secondary md:text-3xl">
+        <h2 className="mb-8 text-2xl font-bold text-nav md:text-3xl">
           Meie teenused
         </h2>
         <div className="grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
