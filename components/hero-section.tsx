@@ -24,11 +24,11 @@ export function HeroSection() {
     <section className="relative bg-gradient-to-br from-[#12324a] via-[#0f2a3f] to-[#0a1f2e]">
       {/* Header */}
       <header className="relative z-20 border-b border-white/10 bg-[#0a1f2e]/40">
-        <div className="mx-auto flex max-w-7xl items-center justify-between px-4 py-3 md:px-6 md:py-4">
+        <div className="mx-auto flex max-w-7xl items-center justify-between px-4 py-4 md:px-6 md:py-5">
           {/* Logo */}
           <Link href="/" className="flex items-center gap-3">
-            <div className="flex h-11 w-11 items-center justify-center rounded-xl bg-gradient-to-br from-[#3b9eff] to-[#1a7fd9] shadow-lg md:h-12 md:w-12">
-              <svg viewBox="0 0 40 40" fill="none" className="h-7 w-7 md:h-8 md:w-8">
+            <div className="flex h-12 w-12 items-center justify-center rounded-xl bg-gradient-to-br from-[#3b9eff] to-[#1a7fd9] shadow-lg md:h-14 md:w-14">
+              <svg viewBox="0 0 40 40" fill="none" className="h-8 w-8 md:h-9 md:w-9">
                 <path d="M12 22L20 14L28 22" stroke="white" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"/>
                 <path d="M15 20V28H25V20" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
                 <rect x="18" y="23" width="4" height="5" rx="0.5" fill="white" fillOpacity="0.9"/>
@@ -37,27 +37,27 @@ export function HeroSection() {
             </div>
             <div className="flex flex-col">
               <div className="flex items-baseline">
-                <span className="text-xl font-bold tracking-tight text-white/90 md:text-2xl">PIND</span>
-                <span className="text-xl font-bold tracking-tight text-[#3b9eff] md:text-2xl">PRO</span>
+                <span className="text-2xl font-bold tracking-tight text-white/90 md:text-3xl">PIND</span>
+                <span className="text-2xl font-bold tracking-tight text-[#3b9eff] md:text-3xl">PRO</span>
               </div>
-              <span className="hidden text-[8px] font-medium tracking-[0.12em] text-white/50 md:block md:text-[9px]">
+              <span className="hidden text-[9px] font-medium tracking-[0.12em] text-white/50 md:block md:text-[10px]">
                 PINNATÖÖDE LAHENDUSED
               </span>
             </div>
           </Link>
 
           {/* Desktop Nav */}
-          <nav className="hidden items-center gap-8 md:flex">
-            <Link href="#teenused" className="text-sm font-medium text-white/80 transition-colors hover:text-white">
+          <nav className="hidden items-center gap-10 md:flex">
+            <Link href="#teenused" className="text-base font-medium text-white/80 transition-colors hover:text-white">
               Teenused
             </Link>
-            <Link href="#projektid" className="text-sm font-medium text-white/80 transition-colors hover:text-white">
+            <Link href="#projektid" className="text-base font-medium text-white/80 transition-colors hover:text-white">
               Tehtud tööd
             </Link>
-            <Link href="#hinnakiri" className="text-sm font-medium text-white/80 transition-colors hover:text-white">
+            <Link href="#hinnakiri" className="text-base font-medium text-white/80 transition-colors hover:text-white">
               Hinnakiri
             </Link>
-            <Link href="#kontakt" className="text-sm font-medium text-white/80 transition-colors hover:text-white">
+            <Link href="#kontakt" className="text-base font-medium text-white/80 transition-colors hover:text-white">
               Kontakt
             </Link>
           </nav>
@@ -66,7 +66,7 @@ export function HeroSection() {
           <div className="hidden md:block">
             <Link
               href="#kontakt"
-              className="rounded-full bg-[#2563eb] px-6 py-2.5 text-sm font-semibold text-white shadow-lg transition-all hover:bg-[#1d4ed8] hover:shadow-xl"
+              className="rounded-full bg-[#2563eb] px-7 py-3 text-base font-semibold text-white shadow-lg transition-all hover:bg-[#1d4ed8] hover:shadow-xl"
             >
               KÜSI PAKKUMIST
             </Link>
