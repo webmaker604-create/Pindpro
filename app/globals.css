@@ -1,39 +1,41 @@
-@import "tailwindcss";
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
-@theme inline {
-  --color-background: #f4f6f8;
+:root {
+  --color-background: #f8fafc;
   --color-foreground: #12324a;
   --color-card: #ffffff;
   --color-card-foreground: #12324a;
-  --color-primary: #1e78d7;
+  --color-primary: #12324a;
   --color-primary-foreground: #ffffff;
-  --color-secondary: #0f2a44;
+  --color-secondary: #12324a;
   --color-secondary-foreground: #ffffff;
-  --color-muted: #6b7a8a;
-  --color-muted-foreground: #6b7a8a;
-  --color-accent: #27a0ff;
+  --color-muted: #64748b;
+  --color-muted-foreground: #64748b;
+  --color-accent: #2563eb;
   --color-accent-foreground: #ffffff;
   --color-border: #e2e8f0;
-  --color-ring: #1e78d7;
-  --color-nav: #0f2a44;
-  --color-nav-dark: #11324a;
-  --radius: 0.75rem;
-  --font-sans: "Poppins", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  --color-ring: #2563eb;
+  --color-nav: #12324a;
+  --color-nav-dark: #0a1f2e;
 }
 
-@layer base {
-  * {
-    @apply border-border;
-    box-sizing: border-box;
-  }
+*,
+*::before,
+*::after {
+  border-color: var(--color-border);
+  box-sizing: border-box;
+}
 
-  html {
-    scroll-behavior: smooth;
-  }
+html {
+  scroll-behavior: smooth;
+}
 
-  body {
-    @apply bg-background text-foreground antialiased;
-    font-family: var(--font-sans);
-    line-height: 1.5;
-  }
+body {
+  background-color: var(--color-background);
+  color: var(--color-foreground);
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }

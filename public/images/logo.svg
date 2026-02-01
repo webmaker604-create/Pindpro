@@ -1,30 +1,31 @@
 <?xml version="1.0" encoding="utf-8"?>
 <svg xmlns="http://www.w3.org/2000/svg" width="200" height="50" viewBox="0 0 200 50" role="img" aria-label="PindPro logo">
-  <defs>
-    <linearGradient id="g1" x1="0" x2="1">
-      <stop offset="0" stop-color="#4fb0ff"/>
-      <stop offset="1" stop-color="#1e78d7"/>
-    </linearGradient>
-  </defs>
-
-  <!-- icon rounded square -->
-  <g transform="translate(2,3)">
-    <rect x="0" y="0" width="44" height="44" rx="8" fill="url(#g1)" />
-    <rect x="0.5" y="0.5" width="43" height="43" rx="7.5" fill="none" stroke="#ffffff" stroke-opacity="0.12"/>
-    <!-- house -->
-    <g transform="translate(9,8)" fill="#fff">
-      <polygon points="7,3 17,3 12,0" opacity="0.95"/>
-      <rect x="5" y="9" width="14" height="9" rx="1"/>
-      <rect x="10" y="12" width="3" height="3" fill="#cdeaff"/>
+  <!-- Shield with border -->
+  <g transform="translate(0,1)">
+    <!-- Shield outer border (white) -->
+    <path d="M23 2 L42 9 L42 24 C42 35 33 44 23 48 C13 44 4 35 4 24 L4 9 Z" 
+          fill="none" stroke="#ffffff" stroke-width="2" stroke-linejoin="round"/>
+    <!-- Shield inner fill (semi-transparent) -->
+    <path d="M23 5 L39 11 L39 23 C39 33 31 41 23 44 C15 41 7 33 7 23 L7 11 Z" 
+          fill="rgba(255,255,255,0.12)"/>
+    
+    <!-- Floor/surface icon inside shield -->
+    <g transform="translate(11, 14)">
+      <!-- Floor surface lines -->
+      <rect x="0" y="0" width="24" height="3" rx="0.5" fill="#ffffff"/>
+      <line x1="4" y1="7" x2="20" y2="7" stroke="#ffffff" stroke-width="2" stroke-linecap="round"/>
+      <line x1="6" y1="12" x2="18" y2="12" stroke="#ffffff" stroke-width="2" stroke-linecap="round"/>
+      <line x1="8" y1="17" x2="16" y2="17" stroke="#ffffff" stroke-width="1.5" stroke-linecap="round"/>
     </g>
-    <!-- check -->
-    <path d="M9 22 L14 27 L23 16" stroke="#003b6b" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" fill="none" opacity="0.95"/>
+    
+    <!-- Checkmark -->
+    <path d="M11 28 L17 34 L35 16" stroke="#5cb8ff" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
   </g>
 
-  <!-- wordmark -->
-  <g transform="translate(52,14)" font-family="Poppins, Arial, sans-serif" font-weight="700">
-    <text x="0" y="14" font-size="18" fill="#ffffff">PIND</text>
-    <text x="48" y="14" font-size="18" fill="url(#g1)">PRO</text>
-    <text x="0" y="28" font-size="7" fill="#a0c4e8" font-weight="600" letter-spacing="0.5">PINNATOODE LAHENDUSED</text>
+  <!-- Wordmark -->
+  <g transform="translate(50,12)" font-family="Poppins, Arial, sans-serif">
+    <text x="0" y="18" font-size="22" font-weight="700" fill="#ffffff">PIND</text>
+    <text x="56" y="18" font-size="22" font-weight="700" fill="#5cb8ff">PRO</text>
+    <text x="0" y="32" font-size="7.5" fill="rgba(255,255,255,0.75)" font-weight="500" letter-spacing="1.2">PINNATÖÖDE LAHENDUSED</text>
   </g>
 </svg>
