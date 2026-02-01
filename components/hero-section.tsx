@@ -15,8 +15,8 @@ export function HeroSection() {
   ]
 
   const trustBadges = [
-    { value: "15+", label: "aastat kogemust" },
-    { value: "500+", label: "teostatud projekti" },
+    { value: "8+", label: "aastat kogemust" },
+    { value: "15+", label: "teostatud projekti" },
     { value: "5a", label: "garantii töödele" },
   ]
 

@@ -4,7 +4,7 @@ import Link from "next/link"
 const pricingTiers = [
   {
     title: "Garaažipõrandad",
-    price: "alates 25",
+    price: "alates 35",
     unit: "€/m²",
     description: "Eragaraažid ja väiksemad pinnad",
     features: [
@@ -16,7 +16,7 @@ const pricingTiers = [
   },
   {
     title: "Tööstuspõrandad",
-    price: "alates 18",
+    price: "alates 28",
     unit: "€/m²",
     description: "Laod, tootmishooned, logistika",
     features: [
@@ -29,7 +29,7 @@ const pricingTiers = [
   },
   {
     title: "Betooni lihvimine",
-    price: "alates 12",
+    price: "alates 18",
     unit: "€/m²",
     description: "Ettevalmistus ja poleerimine",
     features: [
