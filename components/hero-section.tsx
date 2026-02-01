@@ -6,14 +6,42 @@ import { Check } from "lucide-react"
 
 function Logo() {
   return (
-    <Image
-      src="/images/pindpro-logo.png"
-      alt="PindPro - Pinnatoode Lahendused"
-      width={200}
-      height={60}
-      className="h-10 w-auto md:h-12"
-      priority
-    />
+    <div className="flex items-center gap-3">
+      {/* Icon - Square with house and checkmark */}
+      <svg
+        viewBox="0 0 60 60"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+        className="h-12 w-12 md:h-14 md:w-14"
+      >
+        {/* Rounded square background */}
+        <rect x="2" y="2" width="56" height="56" rx="12" fill="url(#iconGradient)" stroke="#5cb8ff" strokeWidth="2" />
+        {/* House roof shape */}
+        <path d="M18 32L30 20L42 32" stroke="white" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round" fill="none" />
+        {/* House body hint */}
+        <path d="M22 30V40H38V30" stroke="white" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" fill="none" />
+        {/* Windows */}
+        <rect x="26" y="33" width="8" height="7" rx="1" fill="white" fillOpacity="0.9" />
+        {/* Checkmark */}
+        <path d="M15 48L22 55L45 32" stroke="#5cb8ff" strokeWidth="4" strokeLinecap="round" strokeLinejoin="round" />
+        <defs>
+          <linearGradient id="iconGradient" x1="0" y1="0" x2="60" y2="60" gradientUnits="userSpaceOnUse">
+            <stop stopColor="#3b9eff" />
+            <stop offset="1" stopColor="#1e7fd9" />
+          </linearGradient>
+        </defs>
+      </svg>
+      {/* Text part */}
+      <div className="flex flex-col">
+        <div className="flex items-baseline tracking-tight">
+          <span className="text-2xl font-bold text-white/80 md:text-3xl">PIND</span>
+          <span className="text-2xl font-bold text-[#3b9eff] md:text-3xl">PRO</span>
+        </div>
+        <span className="text-[9px] font-semibold tracking-[0.2em] text-white/60 md:text-[10px]">
+          PINNATOODE LAHENDUSED
+        </span>
+      </div>
+    </div>
   )
 }
 
