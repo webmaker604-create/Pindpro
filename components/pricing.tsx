@@ -50,7 +50,7 @@ const pricingTiers = [
 const whyUs = [
   {
     icon: <Shield className="h-6 w-6" />,
-    title: "5 aastat garantiid",
+    title: "2+ aastat garantiid",
     description: "Anname kõikidele töödele garantii",
   },
   {
@@ -72,8 +72,14 @@ const whyUs = [
 
 export function Pricing() {
   return (
-    <section id="hinnakiri" className="bg-slate-100 py-16 md:py-24">
-      <div className="mx-auto max-w-7xl px-4 md:px-6">
+    <section id="hinnakiri" className="relative bg-white py-16 md:py-24">
+      {/* Decorative background */}
+      <div className="absolute inset-0 overflow-hidden">
+        <div className="absolute left-1/2 top-0 h-px w-full max-w-4xl -translate-x-1/2 bg-gradient-to-r from-transparent via-slate-300 to-transparent" />
+        <div className="absolute -left-20 top-40 h-72 w-72 rounded-full bg-[#2563eb]/5 blur-3xl" />
+        <div className="absolute -right-20 bottom-40 h-72 w-72 rounded-full bg-[#0f2a3d]/5 blur-3xl" />
+      </div>
+      <div className="relative mx-auto max-w-7xl px-4 md:px-6">
         {/* Header */}
         <div className="mb-12 text-center md:mb-16">
           <h2 className="mb-4 text-3xl font-bold text-[#0f2a3d] md:text-4xl">

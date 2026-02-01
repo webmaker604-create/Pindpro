@@ -27,8 +27,13 @@ const projects = [
 
 export function Gallery() {
   return (
-    <section id="projektid" className="bg-white py-16 md:py-24">
-      <div className="mx-auto max-w-7xl px-4 md:px-6">
+    <section id="projektid" className="relative bg-gradient-to-b from-slate-50 to-slate-100 py-16 md:py-24">
+      {/* Decorative element */}
+      <div className="absolute inset-0 overflow-hidden">
+        <div className="absolute -right-40 -top-40 h-80 w-80 rounded-full bg-[#2563eb]/5 blur-3xl" />
+        <div className="absolute -bottom-40 -left-40 h-80 w-80 rounded-full bg-[#0f2a3d]/5 blur-3xl" />
+      </div>
+      <div className="relative mx-auto max-w-7xl px-4 md:px-6">
         {/* Header */}
         <div className="mb-12 flex flex-col items-start justify-between gap-4 md:flex-row md:items-end">
           <div>
