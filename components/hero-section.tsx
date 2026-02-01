@@ -6,38 +6,14 @@ import { Check } from "lucide-react"
 
 function Logo() {
   return (
-    <div className="flex items-center gap-3">
-      {/* Shield with tools */}
-      <div className="relative h-12 w-10 md:h-14 md:w-12">
-        <svg viewBox="0 0 48 56" fill="none" xmlns="http://www.w3.org/2000/svg" className="h-full w-full">
-          {/* Shield background */}
-          <path
-            d="M24 2L4 10V26C4 40 24 54 24 54C24 54 44 40 44 26V10L24 2Z"
-            fill="#1e4a6e"
-            stroke="#5cb8ff"
-            strokeWidth="2"
-          />
-          {/* Roller tool */}
-          <rect x="14" y="18" width="12" height="6" rx="1" fill="white" />
-          <rect x="18" y="24" width="4" height="12" fill="white" />
-          <rect x="16" y="34" width="8" height="3" rx="1" fill="white" />
-          {/* Brush strokes */}
-          <path d="M30 20L36 14" stroke="#5cb8ff" strokeWidth="2" strokeLinecap="round" />
-          <path d="M32 24L38 18" stroke="#5cb8ff" strokeWidth="2" strokeLinecap="round" />
-          <path d="M30 28L36 22" stroke="#5cb8ff" strokeWidth="2" strokeLinecap="round" />
-        </svg>
-      </div>
-      {/* Text */}
-      <div className="flex flex-col">
-        <div className="flex items-baseline">
-          <span className="text-xl font-bold tracking-tight text-white md:text-2xl">PIND</span>
-          <span className="text-xl font-bold tracking-tight text-[#5cb8ff] md:text-2xl">PRO</span>
-        </div>
-        <span className="text-[8px] font-medium tracking-[0.15em] text-white/70 md:text-[9px]">
-          PINNATÖÖDE LAHENDUSED
-        </span>
-      </div>
-    </div>
+    <Image
+      src="/images/pindpro-logo.png"
+      alt="PindPro - Pinnatoode Lahendused"
+      width={200}
+      height={60}
+      className="h-10 w-auto md:h-12"
+      priority
+    />
   )
 }
 
