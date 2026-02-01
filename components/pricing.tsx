@@ -3,22 +3,23 @@ import Link from "next/link"
 
 const pricingTiers = [
   {
-    title: "Garaažipõrandad",
-    price: "alates 35",
+    title: "Erakliendi põrandad",
+    price: "alates 29",
     unit: "€/m²",
-    description: "Epoksiidsüsteem 2-3mm, mitte tavaline epovärv",
-    system: "Täissüsteem koos ettevalmistusega",
+    description: "Garaažid, keldrid ja väiksemad pinnad koduseks kasutuseks",
+    system: "Epoksiidkate 2-3mm",
     features: [
-      "Mehaaniline lihvimine teemantketastega",
-      "Pragude parandus epoksüvaiguga",
-      "Praimer + iseniveleeruv epoksiidkate",
+      "Mehaaniline aluspinna lihvimine",
+      "Praimer + epoksiidkate (2-3 mm)",
+      "Vastupidav ja kergesti hooldatav pind",
       "Libisemiskindel viimistlus (valikuline)",
-      "2-3 päeva teostusaeg",
+      "Teostusaeg 1-2 päeva",
     ],
+    note: "Optimeeritud koduseks kasutuseks, ei sisalda tööstuslikku armeerimist",
   },
   {
     title: "Tööstuspõrandad",
-    price: "alates 28",
+    price: "alates 35",
     unit: "€/m²",
     description: "Raske koormuse süsteem 500+ m² pindadele",
     system: "Kvartsliivaga armeeritud epoksiid",
@@ -30,6 +31,20 @@ const pricingTiers = [
       "Töö ka nädalavahetustel (kokkuleppel)",
     ],
     popular: true,
+  },
+  {
+    title: "Akrüülpõrandad (MMA)",
+    price: "alates 45",
+    unit: "€/m²",
+    description: "Kiirkivistuv süsteem, kasutatav juba 1-2 tunni pärast",
+    system: "Metüülmetakrülaat (MMA)",
+    features: [
+      "Kiire kivistumine (kõndimiskindel 30-60 min)",
+      "Sobib paigaldamiseks ka madalatel temperatuuridel",
+      "Minimaalne tööseisak",
+      "Keemiliselt vastupidav viimistlus",
+      "Tööstuslik kasutuskoormus",
+    ],
   },
   {
     title: "Betooni lihvimine",
@@ -55,8 +70,8 @@ const whyUs = [
   },
   {
     icon: <Shield className="h-6 w-6" />,
-    title: "2+ aastat garantiid",
-    description: "Töötingimuste kontroll on eeldus kehtivale garantiile",
+    title: "1-2 aastat garantiid",
+    description: "Garantii pikkus sõltub süsteemist ja töötingimustest",
   },
   {
     icon: <Users className="h-6 w-6" />,
@@ -95,11 +110,11 @@ export function Pricing() {
         </div>
 
         {/* Pricing Cards */}
-        <div className="mb-16 grid gap-6 md:grid-cols-2 lg:grid-cols-3">
+        <div className="mb-16 grid gap-6 md:grid-cols-2 lg:grid-cols-4">
           {pricingTiers.map((tier) => (
             <div
               key={tier.title}
-              className={`relative rounded-2xl border bg-white p-6 shadow-sm transition-all hover:shadow-lg ${
+              className={`relative flex flex-col rounded-2xl border bg-white p-6 shadow-sm transition-all hover:shadow-lg ${
                 tier.popular ? "border-[#2563eb] ring-2 ring-[#2563eb]/20" : "border-gray-200"
               }`}
             >
@@ -121,7 +136,7 @@ export function Pricing() {
                 <span className="text-3xl font-bold text-[#0f2a3d]">{tier.price}</span>
                 <span className="ml-1 text-gray-500">{tier.unit}</span>
               </div>
-              <ul className="mb-6 space-y-3">
+              <ul className="mb-6 flex-grow space-y-3">
                 {tier.features.map((feature) => (
                   <li key={feature} className="flex items-start gap-3">
                     <Check className="mt-0.5 h-5 w-5 flex-shrink-0 text-green-500" />
@@ -129,9 +144,12 @@ export function Pricing() {
                   </li>
                 ))}
               </ul>
+              {tier.note && (
+                <p className="mb-4 text-xs italic text-gray-400">{tier.note}</p>
+              )}
               <Link
                 href="#kontakt"
-                className={`block rounded-lg py-3 text-center font-semibold transition-all ${
+                className={`mt-auto block rounded-lg py-3 text-center font-semibold transition-all ${
                   tier.popular
                     ? "bg-[#2563eb] text-white hover:bg-[#1d4ed8]"
                     : "bg-slate-100 text-[#0f2a3d] hover:bg-slate-200"
