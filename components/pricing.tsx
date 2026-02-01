@@ -6,11 +6,13 @@ const pricingTiers = [
     title: "Garaažipõrandad",
     price: "alates 35",
     unit: "€/m²",
-    description: "Eragaraažid ja väiksemad pinnad",
+    description: "Epoksiidsüsteem 2-3mm, mitte tavaline epovärv",
+    system: "Täissüsteem koos ettevalmistusega",
     features: [
-      "Aluspinna ettevalmistus",
-      "Praimer + epoksiidkate",
-      "Kuni 50m² projektid",
+      "Mehaaniline lihvimine teemantketastega",
+      "Pragude parandus epoksüvaiguga",
+      "Praimer + iseniveleeruv epoksiidkate",
+      "Libisemiskindel viimistlus (valikuline)",
       "2-3 päeva teostusaeg",
     ],
   },
@@ -18,12 +20,14 @@ const pricingTiers = [
     title: "Tööstuspõrandad",
     price: "alates 28",
     unit: "€/m²",
-    description: "Laod, tootmishooned, logistika",
+    description: "Raske koormuse süsteem 500+ m² pindadele",
+    system: "Kvartsliivaga armeeritud epoksiid",
     features: [
-      "Täispakett ettevalmistusest viimistluseni",
-      "Raske koormuse kate",
-      "Suured pinnad 500+ m²",
-      "Individuaalne ajakava",
+      "Professionaalne aluspinna ettevalmistus",
+      "Praimer + kvartsliivaga armeeritud kiht",
+      "Kulumiskindel epoksiidviimistlus",
+      "Keemiakindlus ja lihtne hooldus",
+      "Töö ka nädalavahetustel (kokkuleppel)",
     ],
     popular: true,
   },
@@ -31,12 +35,14 @@ const pricingTiers = [
     title: "Betooni lihvimine",
     price: "alates 18",
     unit: "€/m²",
-    description: "Ettevalmistus ja poleerimine",
+    description: "Ettevalmistus kattele, mitte poleerimine",
+    system: "Mehaaniline teemantlihvimine",
     features: [
-      "Vana katte eemaldus",
-      "Tasandamine",
-      "Pragude parandus",
-      "Ettevalmistus uueks katteks",
+      "Vana katte/värvi eemaldus",
+      "Pinna profileerimine uuele kattele",
+      "Pragude ja aukude parandus",
+      "Tolmuvaba töö (tööstuslik imeja)",
+      "Sobib iga järgneva kattesüsteemiga",
     ],
   },
 ]
@@ -95,7 +101,12 @@ export function Pricing() {
               )}
               <div className="mb-4">
                 <h3 className="text-xl font-bold text-[#0f2a3d]">{tier.title}</h3>
-                <p className="text-sm text-gray-500">{tier.description}</p>
+                <p className="mt-1 text-sm text-gray-500">{tier.description}</p>
+                {tier.system && (
+                  <p className="mt-2 inline-block rounded-full bg-[#0f2a3d]/10 px-3 py-1 text-xs font-medium text-[#0f2a3d]">
+                    {tier.system}
+                  </p>
+                )}
               </div>
               <div className="mb-6">
                 <span className="text-3xl font-bold text-[#0f2a3d]">{tier.price}</span>
