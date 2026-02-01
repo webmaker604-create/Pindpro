@@ -17,13 +17,19 @@
   --color-ring: #1e78d7;
   --color-nav: #0f2a44;
   --color-nav-dark: #11324a;
-  --radius: 0.75rem;
-  --font-sans: "Poppins", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  --radius-sm: 0.5rem;
+  --radius-md: 0.75rem;
+  --radius-lg: 1rem;
+  --radius-xl: 1.5rem;
+  --font-sans: "Poppins", system-ui, -apple-system, "Segoe UI", Roboto,
+    "Helvetica Neue", Arial, sans-serif;
 }
 
 @layer base {
-  * {
-    @apply border-border;
+  *,
+  *::before,
+  *::after {
+    border-color: var(--color-border);
     box-sizing: border-box;
   }
 
@@ -32,8 +38,11 @@
   }
 
   body {
-    @apply bg-background text-foreground antialiased;
+    background-color: var(--color-background);
+    color: var(--color-foreground);
     font-family: var(--font-sans);
-    line-height: 1.5;
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
   }
 }

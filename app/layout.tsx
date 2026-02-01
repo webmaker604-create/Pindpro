@@ -4,13 +4,14 @@ import "./globals.css"
 
 const poppins = Poppins({
   subsets: ["latin"],
-  weight: ["300", "400", "600", "700"],
-  variable: "--font-poppins",
+  weight: ["300", "400", "500", "600", "700"],
+  display: "swap",
 })
 
 export const metadata: Metadata = {
   title: "PindPro — Pinnatööd, mis kestavad",
-  description: "Teostame kauakestvaid epopõrandaid ja pinnatöid. Korrektne ettevalmistus, puhas teostus ja kokkulepetest kinnipidamine.",
+  description:
+    "Teostame kauakestvaid epopõrandaid ja pinnatöid. Korrektne ettevalmistus, puhas teostus ja kokkulepetest kinnipidamine.",
 }
 
 export const viewport: Viewport = {
