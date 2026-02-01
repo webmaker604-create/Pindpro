@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Simplified PindPro logo: rounded square with house + check, and wordmark -->
+<svg xmlns="http://www.w3.org/2000/svg" width="420" height="120" viewBox="0 0 420 120" role="img" aria-label="PindPro logo">
+  <defs>
+    <linearGradient id="g1" x1="0" x2="1">
+      <stop offset="0" stop-color="#4fb0ff"/>
+      <stop offset="1" stop-color="#1e78d7"/>
+    </linearGradient>
+    <filter id="f1" x="-50%" y="-50%" width="200%" height="200%">
+      <feDropShadow dx="0" dy="6" stdDeviation="8" flood-color="#1e78d7" flood-opacity="0.12"/>
+    </filter>
+  </defs>
+
+  <!-- icon rounded square -->
+  <g transform="translate(8,8)">
+    <rect x="0" y="0" width="88" height="88" rx="14" fill="url(#g1)" />
+    <rect x="0.5" y="0.5" width="87" height="87" rx="13.5" fill="none" stroke="#ffffff" stroke-opacity="0.12"/>
+    <!-- house -->
+    <g transform="translate(18,16)" fill="#fff">
+      <polygon points="14,6 34,6 24,0" opacity="0.95"/>
+      <rect x="10" y="18" width="28" height="18" rx="2"/>
+      <rect x="20" y="24" width="6" height="6" fill="#cdeaff"/>
+    </g>
+    <!-- check -->
+    <path d="M18 44 L28 54 L46 32" stroke="#003b6b" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" fill="none" opacity="0.95" transform="translate(0,0)"/>
+  </g>
+
+  <!-- wordmark -->
+  <g transform="translate(110,36)" font-family="Poppins, Arial, sans-serif" font-weight="700">
+    <text x="0" y="20" font-size="28" fill="#233a50">PIND</text>
+    <text x="74" y="20" font-size="28" fill="url(#g1)">PRO</text>
+    <text x="0" y="42" font-size="10" fill="#6b7a8a" font-weight="600">PINNATÖÖDE LAHENDUSED</text>
+  </g>
+</svg>
