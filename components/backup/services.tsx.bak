@@ -6,7 +6,6 @@ const services = [
     title: "Epoksiidpõrandad",
     description: "Vastupidavad ja keemiliselt kindlad põrandakatted tööstusele, garaažidele ja äripindadele. Isetasanduvad ja dekoratiivsed lahendused.",
     features: ["Keemiakindel", "Vastupidav", "Lihtne hooldada"],
-    cta: "Uuri, kas sobib sulle",
     icon: (
       <svg viewBox="0 0 48 48" fill="none" className="h-full w-full">
         <rect x="6" y="28" width="36" height="8" rx="2" fill="#3b9eff" fillOpacity="0.2" stroke="#3b9eff" strokeWidth="2"/>
@@ -19,7 +18,6 @@ const services = [
     title: "Tööstuspõrandad",
     description: "Ülitugevad põrandakatted ladudele, tootmishoonetele ja logistikakeskustele. Taluvad rasket koormust ja intensiivset liiklust.",
     features: ["Raske koormus", "Kulumiskindel", "Pikk eluiga"],
-    cta: "Küsi kiiret hinnangut",
     icon: (
       <svg viewBox="0 0 48 48" fill="none" className="h-full w-full">
         <rect x="4" y="32" width="40" height="6" rx="1" fill="#3b9eff" fillOpacity="0.2" stroke="#3b9eff" strokeWidth="2"/>
@@ -35,7 +33,6 @@ const services = [
     title: "Garaažipõrandad",
     description: "Vastupidavad ja esteetilised lahendused eragaraažidele ja parklatele. Õli- ja kemikaalikindlad, libisemiskindlad pinnad.",
     features: ["Õlikindel", "Libisemiskindel", "Esteetiline"],
-    cta: "Küsi tasuta konsultatsiooni",
     icon: (
       <svg viewBox="0 0 48 48" fill="none" className="h-full w-full">
         <path d="M6 20L24 8L42 20V40H6V20Z" stroke="#3b9eff" strokeWidth="2" fill="#3b9eff" fillOpacity="0.1"/>
@@ -48,7 +45,6 @@ const services = [
     title: "Betooni lihvimine",
     description: "Betoonpõrandate lihvimine ja poleerimine. Eemaldame vana katte, tasandame ja valmistame aluspinna ette uue katte jaoks.",
     features: ["Tasandamine", "Poleerimine", "Ettevalmistus"],
-    cta: "Küsi pakkumist",
     icon: (
       <svg viewBox="0 0 48 48" fill="none" className="h-full w-full">
         <circle cx="24" cy="28" r="14" fill="#3b9eff" fillOpacity="0.1" stroke="#3b9eff" strokeWidth="2"/>
@@ -63,7 +59,6 @@ const services = [
     title: "Aluspinna ettevalmistus",
     description: "Professionaalne aluspinna ettevalmistus: pragude parandus, niiskuse kontroll, praimeerimine ja tasandamine.",
     features: ["Pragude remont", "Niiskuskontroll", "Praimer"],
-    cta: "Uuri lähemalt",
     icon: (
       <svg viewBox="0 0 48 48" fill="none" className="h-full w-full">
         <rect x="6" y="30" width="36" height="10" rx="2" fill="#3b9eff" fillOpacity="0.1" stroke="#3b9eff" strokeWidth="2"/>
@@ -79,7 +74,6 @@ const services = [
     title: "Akrüülpõrandad (MMA)",
     description: "Kiirkivistuvad akrüülpõrandad, mis on valmis kasutamiseks juba 2 tunni pärast. Ideaalne, kui tootmine ei tohi seisma jääda.",
     features: ["Kiire kivinemine", "Töötab külmas", "24/7 paigaldus"],
-    cta: "Kas see sobib mulle?",
     icon: (
       <svg viewBox="0 0 48 48" fill="none" className="h-full w-full">
         <path d="M24 6L28 18H40L30 26L34 38L24 30L14 38L18 26L8 18H20L24 6Z" fill="#3b9eff" fillOpacity="0.2" stroke="#3b9eff" strokeWidth="2" strokeLinejoin="round"/>
@@ -142,7 +136,7 @@ export function Services() {
                 href="#kontakt"
                 className="inline-flex items-center gap-1 text-sm font-semibold text-[#2563eb] transition-colors hover:text-[#1d4ed8]"
               >
-                {service.cta || "Küsi pakkumist"}
+                Küsi pakkumist
                 <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-1" />
               </Link>
             </div>

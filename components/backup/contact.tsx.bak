@@ -152,23 +152,6 @@ export function Contact() {
                 </div>
 
                 <div>
-                  <label htmlFor="timeline" className="mb-2 block text-sm font-medium text-[#0f2a3d]">
-                    Millal soovite tööd teostada?
-                  </label>
-                  <select
-                    id="timeline"
-                    name="timeline"
-                    className="w-full rounded-lg border border-gray-300 bg-white px-4 py-3 text-[#0f2a3d] outline-none transition-colors focus:border-[#2563eb] focus:ring-2 focus:ring-[#2563eb]/20"
-                  >
-                    <option value="">Vali ajakava</option>
-                    <option value="asap">Esimesel võimalusel</option>
-                    <option value="1-2weeks">1-2 nädala jooksul</option>
-                    <option value="month">Kuu aja jooksul</option>
-                    <option value="later">Hiljem / pole kindel</option>
-                  </select>
-                </div>
-
-                <div>
                   <label htmlFor="message" className="mb-2 block text-sm font-medium text-[#0f2a3d]">
                     Kirjeldus
                   </label>

@@ -66,12 +66,12 @@ const whyUs = [
   {
     icon: <Thermometer className="h-6 w-6" />,
     title: "Töötingimuste kontroll",
-    description: "Kontrollime aluspinna niiskust, temperatuuri ja keskkonnatingimusi vastavalt kasutatavale süsteemile. See on eeldus vastupidavale tulemusele.",
+    description: "Kontrollime enne paigaldust niiskust, temperatuuri ja keskkonnatingimusi",
   },
   {
     icon: <Shield className="h-6 w-6" />,
-    title: "Garantii kuni 5 aastat",
-    description: "Garantii pikkus sõltub valitud süsteemist ja töötingimustest",
+    title: "1-2 aastat garantiid",
+    description: "Garantii pikkus sõltub süsteemist ja töötingimustest",
   },
   {
     icon: <Users className="h-6 w-6" />,
