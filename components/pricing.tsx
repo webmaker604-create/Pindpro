@@ -1,4 +1,4 @@
-import { Check, Clock, Shield, Users, Wrench } from "lucide-react"
+import { Check, Clock, Shield, Thermometer, Users, Wrench } from "lucide-react"
 import Link from "next/link"
 
 const pricingTiers = [
@@ -49,14 +49,14 @@ const pricingTiers = [
 
 const whyUs = [
   {
-    icon: <Shield className="h-6 w-6" />,
-    title: "2+ aastat garantiid",
-    description: "Anname kõikidele töödele garantii",
+    icon: <Thermometer className="h-6 w-6" />,
+    title: "Töötingimuste kontroll",
+    description: "Kontrollime enne paigaldust niiskust, temperatuuri ja keskkonnatingimusi",
   },
   {
-    icon: <Clock className="h-6 w-6" />,
-    title: "Kiire teostus",
-    description: "Peame kinni kokkulepitud tähtaegadest",
+    icon: <Shield className="h-6 w-6" />,
+    title: "2+ aastat garantiid",
+    description: "Töötingimuste kontroll on eeldus kehtivale garantiile",
   },
   {
     icon: <Users className="h-6 w-6" />,
@@ -86,8 +86,11 @@ export function Pricing() {
             Orienteeruvad hinnad
           </h2>
           <p className="mx-auto max-w-2xl text-gray-600">
-            Täpne hind sõltub aluspinna seisukorrast, valitud süsteemist ja pinna suurusest. 
-            Küsi tasuta kohapealset ülevaatust ja personaalset pakkumist.
+            Hinnad on orienteeruvad. Täpne maksumus selgub aluspinna seisukorra, valitud süsteemi ja pinna suuruse põhjal.
+            Pakume tasuta objekti ülevaatust ja personaalset pakkumist.
+          </p>
+          <p className="mx-auto mt-3 max-w-2xl text-sm text-gray-500">
+            Orienteeruvad hinnad eeldavad korrektset aluspinna ettevalmistust ja kvaliteetset põrandasüsteemi.
           </p>
         </div>
 
