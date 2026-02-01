@@ -22,10 +22,8 @@ export function Hero() {
           <ul className="mb-6 space-y-2">
             {checks.map((item) => (
               <li key={item} className="flex items-center gap-2">
-                <span className="flex h-5 w-5 items-center justify-center rounded bg-accent/20">
-                  <Check className="h-3.5 w-3.5 text-accent" />
-                </span>
-                <span className="text-sm md:text-base">{item}</span>
+                <Check className="h-5 w-5 text-[#4fb0ff]" />
+                <span className="text-sm font-medium md:text-base">{item}</span>
               </li>
             ))}
           </ul>

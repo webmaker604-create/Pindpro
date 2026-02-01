@@ -17,6 +17,10 @@ const config: Config = {
           DEFAULT: "#2563eb",
           hover: "#1d4ed8",
         },
+        nav: {
+          DEFAULT: "#12324a",
+          dark: "#0a1f2e",
+        },
       },
       fontFamily: {
         sans: ["var(--font-poppins)", "system-ui", "sans-serif"],
