@@ -8,7 +8,6 @@ const projects = [
     type: "Epoksiidpõrand",
     area: "120 m²",
     time: "2 päeva",
-    solution: "Ebatasane aluspind - tasandatud lihvimise ja epoksiid-täitmisega",
   },
   {
     image: "/images/industrial-floor.jpg",
@@ -16,7 +15,6 @@ const projects = [
     type: "Tööstuspõrand",
     area: "2500 m²",
     time: "2 nädalat",
-    solution: "Kvartsliivaga armeeritud epoksiidsüsteem raskele koormusele",
   },
   {
     image: "/images/commercial-floor.jpg",
@@ -24,7 +22,6 @@ const projects = [
     type: "Epoksiidpõrand",
     area: "450 m²",
     time: "5 päeva",
-    solution: "Isetasanduv epoksiidkate dekoratiivse viimistlusega",
   },
 ]
 
@@ -77,12 +74,9 @@ export function Gallery() {
                 </div>
               </div>
               <div className="p-5">
-                <h3 className="mb-2 text-lg font-bold text-[#0f2a3d]">
+                <h3 className="mb-3 text-lg font-bold text-[#0f2a3d]">
                   {project.title}
                 </h3>
-                <p className="mb-3 text-xs text-[#2563eb]">
-                  {project.solution}
-                </p>
                 <div className="flex gap-4 text-sm text-gray-600">
                   <div>
                     <span className="font-medium text-[#0f2a3d]">{project.area}</span>

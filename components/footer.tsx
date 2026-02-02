@@ -71,8 +71,8 @@ export function Footer() {
               © {new Date().getFullYear()} PindPro OÜ. Kõik õigused kaitstud.
             </p>
             <div className="flex gap-6">
-              <Link href="#" className="text-sm text-white/50 hover:text-white">Privaatsuspoliitika</Link>
-              <Link href="#" className="text-sm text-white/50 hover:text-white">Tingimused</Link>
+              <Link href="/privaatsus" className="text-sm text-white/50 hover:text-white">Privaatsuspoliitika</Link>
+              <Link href="/privaatsus#tingimused" className="text-sm text-white/50 hover:text-white">Tingimused</Link>
             </div>
           </div>
         </div>
