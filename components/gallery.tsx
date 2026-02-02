@@ -7,7 +7,6 @@ const projects = [
     title: "Tehnikaruum",
     type: "Epoksiidpõrand",
     area: "85 m²",
-    time: "2 päeva",
     solution: "Türkiissinine epoksiidkate veekaitsega viimistlusega",
   },
   {
@@ -15,7 +14,6 @@ const projects = [
     title: "Logistikakeskus",
     type: "Tööstuspõrand",
     area: "2500 m²",
-    time: "2 nädalat",
     solution: "Kvartsliivaga armeeritud epoksiidsüsteem raskele koormusele",
   },
   {
@@ -23,7 +21,6 @@ const projects = [
     title: "Eragaraaž",
     type: "Epoksiidpõrand",
     area: "120 m²",
-    time: "2 päeva",
     solution: "Ebatasane aluspind - tasandatud lihvimise ja epoksiid-täitmisega",
   },
   {
@@ -31,16 +28,32 @@ const projects = [
     title: "Aluspinna ettevalmistus",
     type: "Betooni lihvimine",
     area: "180 m²",
-    time: "1 päev",
-    solution: "Mehaaniline teemantlihvimine uue katte jaoks",
+    solution: "Mehaaniline teemantlihvimine tehtud + lisatud primer koos liivaga. Üleliigse liiva eemaldamine.",
   },
   {
     image: "/images/primer-work.jpg",
     title: "Tööstushoone",
     type: "Praimeerimine",
     area: "350 m²",
-    time: "3 päeva",
     solution: "Aluspinna praimeerimine ja kvartsliiva paigaldus",
+  },
+]
+
+const measurementImages = [
+  {
+    image: "/images/temp-meter.jpg",
+    title: "Temperatuuri kontroll",
+    description: "Pinna temperatuur 7.8°C",
+  },
+  {
+    image: "/images/humidity-meter.jpg",
+    title: "Niiskuse kontroll",
+    description: "Õhuniiskus 55.7%, temperatuur 16.3°C",
+  },
+  {
+    image: "/images/moisture-meter.jpg",
+    title: "Betooni niiskus",
+    description: "Niiskusmõõtur näitab 74.8",
   },
 ]
 
@@ -71,6 +84,31 @@ export function Gallery() {
           </Link>
         </div>
 
+        {/* Measurement Section */}
+        <div className="mb-16">
+          <h3 className="mb-6 text-xl font-bold text-[#0f2a3d]">
+            Niiskuse ja temperatuuri kontroll enne pinna teostust
+          </h3>
+          <div className="grid gap-4 sm:grid-cols-3">
+            {measurementImages.map((item) => (
+              <div key={item.title} className="overflow-hidden rounded-xl border border-gray-200 bg-white shadow-sm">
+                <div className="relative aspect-[4/5]">
+                  <Image
+                    src={item.image}
+                    alt={item.title}
+                    fill
+                    className="object-cover"
+                  />
+                </div>
+                <div className="p-3 text-center">
+                  <h4 className="text-sm font-semibold text-[#0f2a3d]">{item.title}</h4>
+                  <p className="text-xs text-gray-500">{item.description}</p>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+
         {/* Projects Grid */}
         <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
           {projects.map((project) => (
@@ -99,15 +137,9 @@ export function Gallery() {
                 <p className="mb-3 text-xs text-[#2563eb]">
                   {project.solution}
                 </p>
-                <div className="flex gap-4 text-sm text-gray-600">
-                  <div>
-                    <span className="font-medium text-[#0f2a3d]">{project.area}</span>
-                    <span className="ml-1">pindala</span>
-                  </div>
-                  <div>
-                    <span className="font-medium text-[#0f2a3d]">{project.time}</span>
-                    <span className="ml-1">teostusaeg</span>
-                  </div>
+                <div className="text-sm text-gray-600">
+                  <span className="font-medium text-[#0f2a3d]">{project.area}</span>
+                  <span className="ml-1">pindala</span>
                 </div>
               </div>
             </article>
