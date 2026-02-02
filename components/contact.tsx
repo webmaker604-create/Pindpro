@@ -143,21 +143,26 @@ export function Contact() {
                       className="w-full rounded-lg border border-gray-300 bg-white px-4 py-3 text-[#0f2a3d] outline-none transition-colors focus:border-[#2563eb] focus:ring-2 focus:ring-[#2563eb]/20"
                     >
                       <option value="">Vali asukoht</option>
-                      <option value="harjumaa">Harjumaa</option>
-                      <option value="hiiumaa">Hiiumaa</option>
-                      <option value="ida-virumaa">Ida-Virumaa</option>
-                      <option value="jogevamaa">Jõgevamaa</option>
-                      <option value="jarvamaa">Järvamaa</option>
-                      <option value="laanemaa">Läänemaa</option>
-                      <option value="laane-virumaa">Lääne-Virumaa</option>
-                      <option value="polvamaa">Põlvamaa</option>
-                      <option value="parnumaa">Pärnumaa</option>
-                      <option value="raplamaa">Raplamaa</option>
-                      <option value="saaremaa">Saaremaa</option>
-                      <option value="tartumaa">Tartumaa</option>
-                      <option value="valgamaa">Valgamaa</option>
-                      <option value="viljandimaa">Viljandimaa</option>
-                      <option value="vorumaa">Võrumaa</option>
+                      <option value="tallinn">Tallinn</option>
+                      <option value="tartu">Tartu</option>
+                      <option value="parnu">Pärnu</option>
+                      <option value="narva">Narva</option>
+                      <option value="kohtla-jarve">Kohtla-Järve</option>
+                      <option value="viljandi">Viljandi</option>
+                      <option value="rakvere">Rakvere</option>
+                      <option value="maardu">Maardu</option>
+                      <option value="sillamae">Sillamäe</option>
+                      <option value="kuressaare">Kuressaare</option>
+                      <option value="voru">Võru</option>
+                      <option value="valga">Valga</option>
+                      <option value="jogeva">Jõgeva</option>
+                      <option value="haapsalu">Haapsalu</option>
+                      <option value="paide">Paide</option>
+                      <option value="keila">Keila</option>
+                      <option value="saue">Saue</option>
+                      <option value="polva">Põlva</option>
+                      <option value="rapla">Rapla</option>
+                      <option value="muu">Muu asukoht</option>
                     </select>
                   </div>
                 </div>
