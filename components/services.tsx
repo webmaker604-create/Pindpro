@@ -45,6 +45,21 @@ const services = [
     ),
   },
   {
+    title: "Betoonpõrandad",
+    description: "Täisteenus betoonpõrandale: remondime, kaitseme ja viimistleme. Pragude parandus, pinna tugevdamine ja kaitsekiht ühes paketis.",
+    features: ["Remont", "Kaitse", "Viimistlus"],
+    cta: "Saa personaalne hinnang",
+    icon: (
+      <svg viewBox="0 0 48 48" fill="none" className="h-full w-full">
+        <rect x="6" y="28" width="36" height="10" rx="2" fill="#3b9eff" fillOpacity="0.15" stroke="#3b9eff" strokeWidth="2"/>
+        <path d="M10 28V22H38V28" stroke="#3b9eff" strokeWidth="2"/>
+        <path d="M18 22V16M30 22V16" stroke="#3b9eff" strokeWidth="2" strokeLinecap="round"/>
+        <path d="M14 16H34" stroke="#3b9eff" strokeWidth="2" strokeLinecap="round"/>
+        <circle cx="24" cy="12" r="3" fill="#3b9eff" fillOpacity="0.3" stroke="#3b9eff" strokeWidth="1.5"/>
+      </svg>
+    ),
+  },
+  {
     title: "Betooni lihvimine",
     description: "Betoonpõrandate lihvimine ja poleerimine. Eemaldame vana katte, tasandame ja valmistame aluspinna ette uue katte jaoks.",
     features: ["Tasandamine", "Poleerimine", "Ettevalmistus"],

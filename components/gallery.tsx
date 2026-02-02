@@ -4,7 +4,7 @@ import Link from "next/link"
 const projects = [
   {
     image: "/images/garage-before.jpg",
-    title: "Autogaraaž Tallinnas",
+    title: "Eragaraaž",
     type: "Epoksiidpõrand",
     area: "120 m²",
     time: "2 päeva",
@@ -20,7 +20,7 @@ const projects = [
   },
   {
     image: "/images/commercial-floor.jpg",
-    title: "Ärihoone Tartus",
+    title: "Ärihoone",
     type: "Epoksiidpõrand",
     area: "450 m²",
     time: "5 päeva",

@@ -119,17 +119,47 @@ export function Contact() {
                   />
                 </div>
 
-                <div>
-                  <label htmlFor="area" className="mb-2 block text-sm font-medium text-[#0f2a3d]">
-                    Pinna suurus (m²)
-                  </label>
-                  <input
-                    type="text"
-                    id="area"
-                    name="area"
-                    className="w-full rounded-lg border border-gray-300 bg-white px-4 py-3 text-[#0f2a3d] outline-none transition-colors focus:border-[#2563eb] focus:ring-2 focus:ring-[#2563eb]/20"
-                    placeholder="nt. 100"
-                  />
+                <div className="grid gap-5 sm:grid-cols-2">
+                  <div>
+                    <label htmlFor="area" className="mb-2 block text-sm font-medium text-[#0f2a3d]">
+                      Pinna suurus (m²)
+                    </label>
+                    <input
+                      type="text"
+                      id="area"
+                      name="area"
+                      className="w-full rounded-lg border border-gray-300 bg-white px-4 py-3 text-[#0f2a3d] outline-none transition-colors focus:border-[#2563eb] focus:ring-2 focus:ring-[#2563eb]/20"
+                      placeholder="nt. 100"
+                    />
+                  </div>
+
+                  <div>
+                    <label htmlFor="location" className="mb-2 block text-sm font-medium text-[#0f2a3d]">
+                      Asukoht
+                    </label>
+                    <select
+                      id="location"
+                      name="location"
+                      className="w-full rounded-lg border border-gray-300 bg-white px-4 py-3 text-[#0f2a3d] outline-none transition-colors focus:border-[#2563eb] focus:ring-2 focus:ring-[#2563eb]/20"
+                    >
+                      <option value="">Vali asukoht</option>
+                      <option value="harjumaa">Harjumaa</option>
+                      <option value="hiiumaa">Hiiumaa</option>
+                      <option value="ida-virumaa">Ida-Virumaa</option>
+                      <option value="jogevamaa">Jõgevamaa</option>
+                      <option value="jarvamaa">Järvamaa</option>
+                      <option value="laanemaa">Läänemaa</option>
+                      <option value="laane-virumaa">Lääne-Virumaa</option>
+                      <option value="polvamaa">Põlvamaa</option>
+                      <option value="parnumaa">Pärnumaa</option>
+                      <option value="raplamaa">Raplamaa</option>
+                      <option value="saaremaa">Saaremaa</option>
+                      <option value="tartumaa">Tartumaa</option>
+                      <option value="valgamaa">Valgamaa</option>
+                      <option value="viljandimaa">Viljandimaa</option>
+                      <option value="vorumaa">Võrumaa</option>
+                    </select>
+                  </div>
                 </div>
 
                 <div>
@@ -145,6 +175,7 @@ export function Contact() {
                     <option value="epoxy">Epoksiidpõrand</option>
                     <option value="industrial">Tööstuspõrand</option>
                     <option value="garage">Garaažipõrand</option>
+                    <option value="concrete">Betoonpõrand (remont/kaitse/viimistlus)</option>
                     <option value="grinding">Betooni lihvimine</option>
                     <option value="acrylic">Akrüülpõrand (MMA)</option>
                     <option value="other">Muu</option>
