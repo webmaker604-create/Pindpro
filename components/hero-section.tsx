@@ -157,7 +157,7 @@ export function HeroSection() {
             <div className="relative">
               <div className="relative overflow-hidden rounded-2xl shadow-2xl shadow-black/40 ring-1 ring-white/10">
                 <Image
-                  src="/placeholder.svg?height=450&width=600"
+                  src="/images/hero-worker.jpg"
                   alt="Epopõranda paigaldamine"
                   width={600}
                   height={450}

@@ -3,15 +3,15 @@ import Link from "next/link"
 
 const projects = [
   {
-    image: "/placeholder.svg?height=300&width=400",
-    title: "Eragaraaž",
+    image: "/images/turquoise-floor.jpg",
+    title: "Tehnikaruum",
     type: "Epoksiidpõrand",
-    area: "120 m²",
+    area: "85 m²",
     time: "2 päeva",
-    solution: "Ebatasane aluspind - tasandatud lihvimise ja epoksiid-täitmisega",
+    solution: "Türkiissinine epoksiidkate veekaitsega viimistlusega",
   },
   {
-    image: "/placeholder.svg?height=300&width=400",
+    image: "/images/industrial-polished.jpg",
     title: "Logistikakeskus",
     type: "Tööstuspõrand",
     area: "2500 m²",
@@ -19,12 +19,28 @@ const projects = [
     solution: "Kvartsliivaga armeeritud epoksiidsüsteem raskele koormusele",
   },
   {
-    image: "/placeholder.svg?height=300&width=400",
-    title: "Ärihoone",
+    image: "/images/epoxy-garage.jpg",
+    title: "Eragaraaž",
     type: "Epoksiidpõrand",
-    area: "450 m²",
-    time: "5 päeva",
-    solution: "Isetasanduv epoksiidkate dekoratiivse viimistlusega",
+    area: "120 m²",
+    time: "2 päeva",
+    solution: "Ebatasane aluspind - tasandatud lihvimise ja epoksiid-täitmisega",
+  },
+  {
+    image: "/images/preparation.jpg",
+    title: "Aluspinna ettevalmistus",
+    type: "Betooni lihvimine",
+    area: "180 m²",
+    time: "1 päev",
+    solution: "Mehaaniline teemantlihvimine uue katte jaoks",
+  },
+  {
+    image: "/images/primer-work.jpg",
+    title: "Tööstushoone",
+    type: "Praimeerimine",
+    area: "350 m²",
+    time: "3 päeva",
+    solution: "Aluspinna praimeerimine ja kvartsliiva paigaldus",
   },
 ]
 
