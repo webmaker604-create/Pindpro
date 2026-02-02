@@ -3,7 +3,7 @@ import Link from "next/link"
 
 const projects = [
   {
-    image: "/images/garage-before.jpg",
+    image: "/placeholder.svg?height=300&width=400",
     title: "Eragaraaž",
     type: "Epoksiidpõrand",
     area: "120 m²",
@@ -11,7 +11,7 @@ const projects = [
     solution: "Ebatasane aluspind - tasandatud lihvimise ja epoksiid-täitmisega",
   },
   {
-    image: "/images/industrial-floor.jpg",
+    image: "/placeholder.svg?height=300&width=400",
     title: "Logistikakeskus",
     type: "Tööstuspõrand",
     area: "2500 m²",
@@ -19,7 +19,7 @@ const projects = [
     solution: "Kvartsliivaga armeeritud epoksiidsüsteem raskele koormusele",
   },
   {
-    image: "/images/commercial-floor.jpg",
+    image: "/placeholder.svg?height=300&width=400",
     title: "Ärihoone",
     type: "Epoksiidpõrand",
     area: "450 m²",
