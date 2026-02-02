@@ -43,9 +43,9 @@ export function Footer() {
             <h4 className="mb-4 font-semibold text-white">Kontakt</h4>
             <ul className="space-y-3">
               <li>
-                <a href="tel:+3725551234" className="flex items-center gap-2 text-sm text-white/60 hover:text-white">
+                <a href="tel:+37254567790" className="flex items-center gap-2 text-sm text-white/60 hover:text-white">
                   <Phone className="h-4 w-4" />
-                  +372 555 1234
+                  +372 5456 7790
                 </a>
               </li>
               <li>

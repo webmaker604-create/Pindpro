@@ -28,7 +28,7 @@ export function Contact() {
             {/* Contact Info */}
             <div className="space-y-4">
               <a
-                href="tel:+3725551234"
+                href="tel:+37254567790"
                 className="flex items-center gap-4 rounded-xl border border-gray-200 bg-slate-50 p-4 transition-colors hover:border-[#3b9eff]/30"
               >
                 <div className="flex h-12 w-12 items-center justify-center rounded-full bg-[#3b9eff]/10 text-[#2563eb]">
@@ -36,7 +36,7 @@ export function Contact() {
                 </div>
                 <div>
                   <div className="text-sm text-gray-500">Helista meile</div>
-                  <div className="font-semibold text-[#0f2a3d]">+372 555 1234</div>
+                  <div className="font-semibold text-[#0f2a3d]">+372 5456 7790</div>
                 </div>
               </a>
 

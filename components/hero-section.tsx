@@ -134,11 +134,11 @@ export function HeroSection() {
                   Küsi tasuta pakkumist
                 </Link>
                 <a
-                  href="tel:+3725551234"
+                  href="tel:+37254567790"
                   className="inline-flex items-center justify-center gap-2 rounded-lg border-2 border-white/20 px-6 py-3.5 font-semibold text-white transition-all hover:border-white/40 hover:bg-white/5"
                 >
                   <Phone className="h-4 w-4" />
-                  +372 555 1234
+                  +372 5456 7790
                 </a>
               </div>
 
