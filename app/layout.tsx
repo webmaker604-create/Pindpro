@@ -12,6 +12,9 @@ export const metadata: Metadata = {
   title: "PindPro — Pinnatööd, mis kestavad",
   description:
     "Teostame kauakestvaid epopõrandaid ja pinnatöid. Korrektne ettevalmistus, puhas teostus ja kokkulepetest kinnipidamine.",
+  icons: {
+    icon: "/icon.svg",
+  },
 }
 
 export const viewport: Viewport = {
